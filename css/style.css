@@ -13,11 +13,14 @@ top player part start
     background-color: #FFF;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .top-players {
@@ -92,4 +95,59 @@ top blog part start
 .blog-author a {
     text-decoration: none;
     color: #562EFF;
+}
+
+/* ======================
+latest course part start 
+====================== */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 41px;
+}
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-title {
+    font-size: 20px;
+    color: #1E1E1E;
+}
+
+.course-author {
+    font-size: 15px;
+    color: #ED6B4F;
+;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.rating-color {
+    color: #AEAEAE;
+}
+
+.course-duration {
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    padding: 2px 8px;
+    border-radius: 20px;
 }
